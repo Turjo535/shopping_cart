@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Promo Codes</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+</head>
+<body>
+    <header>
+        <h1>Products</h1>
+        <button onclick="toggleCart()">View Cart (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <div class="products-container" id="productsContainer"></div>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button onclick="toggleCart()">Close</button>
+        </div>
+        <div id="cartItems"></div>
+        
+        <div class="promo-section">
+            <input type="text" class="promo-input" id="promoCode" placeholder="Enter promo code">
+            <button onclick="applyPromo()">Apply</button>
+            <div id="promoMessage"></div>
+        </div>
+
+        <div class="price-breakdown">
+            <div class="price-line">
+                <span>Subtotal:</span>
+                <span>$<span id="subtotal">0.00</span></span>
+            </div>
+            <div class="price-line discount">
+                <span>Discount:</span>
+                <span>-$<span id="discountAmount">0.00</span></span>
+            </div>
+            <div class="price-line" style="font-weight: bold;">
+                <span>Total:</span>
+                <span>$<span id="finalTotal">0.00</span></span>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="shopping_cart.js"></script>
+</body>
+</html>
