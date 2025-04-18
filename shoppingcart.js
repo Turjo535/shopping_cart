@@ -5,21 +5,21 @@ const products = [
         name: "Wireless Headphones",
         description: "High-quality wireless headphones with noise cancellation.",
         price: 199.99,
-        image: "/img/headphone.jpg"
+        image: "./img/headphone.jpg"
     },
     {
         id: 2,
         name: "Smart Watch",
         description: "Fitness tracking and smartphone notifications.",
         price: 149.99,
-        image: "/img/smartwatch.jpg"
+        image: "./img/smartwatch.jpg"
     },
     {
         id: 3,
         name: "Bluetooth Speaker",
         description: "Portable waterproof speaker with 20h battery life.",
         price: 79.99,
-        image: "/img/speaker.jpg"
+        image: "./img/speaker.jpg"
     }
 ];
 
