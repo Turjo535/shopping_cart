@@ -5,7 +5,7 @@ const products = [
         name: "Wireless Headphones",
         description: "High-quality wireless headphones with noise cancellation.",
         price: 199.99,
-        image: "/img/wirelessheadphone.webp"
+        image: "/img/headphone.jpg"
     },
     {
         id: 2,
